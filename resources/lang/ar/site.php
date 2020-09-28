@@ -38,6 +38,7 @@ return[
     'edit_order'=>'تعديل الطلب',
     'all_orders'=>'كل الطلبات',
     'loading'=>'جار التحميل',
+    'Logout'=>'تسجيل الخروج',
     'not_enough_amount'=>'لا توجد كميه كافيه',
 
 

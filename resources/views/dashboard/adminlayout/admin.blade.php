@@ -32,14 +32,14 @@
         <link rel="stylesheet" href="{{asset('adminrtl/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 {{--    morris css--}}
         <link rel="stylesheet" href="{{asset('adminrtl/plugins/morris/morris.css')}}">
-{{--    //--}}
+        {{--  j query  //--}}
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-{{--    check editor--}}
+        {{--    check editor--}}
         <script src="{{asset('adminltr/plugins/ckeditor/ckeditor.js')}}"></script>
-{{--    morris--}}
+        {{--    morris--}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
 @endif
 {{--    ///////--}}
@@ -67,6 +67,8 @@
         <link rel="stylesheet" href="{{asset('adminltr/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
         <!-- bootstrap wysihtml5 - text editor -->
         <link rel="stylesheet" href="{{asset('adminltr/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
+        {{--    morris css--}}
+        <link rel="stylesheet" href="{{asset('adminrtl/plugins/morris/morris.css')}}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,9 +79,17 @@
 
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+{{--        <script src="{{asset('adminltr/plugins/ckeditor/ckeditor.js')}}"></script>--}}
+        {{--  j query  //--}}
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+        {{--    check editor--}}
         <script src="{{asset('adminltr/plugins/ckeditor/ckeditor.js')}}"></script>
-
+        {{--    morris--}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     @endif
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -265,7 +275,7 @@
                                     <a class="dropdown-item form-control btn" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        <p>  {{ __('site.logout') }} </p>
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
@@ -494,11 +504,11 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
+{{--<!-- jQuery 3 -->--}}
 {{--<script src="{{asset('adminltr/bower_components/jquery/dist/jquery.min.js')}}"></script>--}}
-<!-- jQuery UI 1.11.4 -->
+{{--<!-- jQuery UI 1.11.4 -->--}}
 {{--<script src="{{asset('adminltr/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>--}}
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+{{--<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->--}}
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>

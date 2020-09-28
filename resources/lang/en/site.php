@@ -38,6 +38,7 @@ return [
     'edit_order'=>'edit order',
     'all_orders'=>'all orders',
     'loading'=>'loading',
+    'Logout'=>'logout',
     'not_enough_amount'=>'not enough amount',
 
 
